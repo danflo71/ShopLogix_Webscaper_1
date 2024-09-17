@@ -142,7 +142,7 @@ def update_Criticality():
 
         # Open the Excel file and update it with the new data using xlwings
         wb = xw.Book(teams_excel_file_path)
-        ws = wb.sheets['BDGEHOURS']  # Ensure this matches the sheet name in your Excel file
+        ws = wb.sheets['SHEET']  # Ensure this matches the sheet name in your Excel file
        
         # Clear existing data in columns A to I
         ws.range('A1:I' + str(ws.cells.last_cell.row)).clear_contents()
